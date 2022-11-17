@@ -9,7 +9,7 @@ function rot13(message){
     message
     .split("")
     .map((el)=> {
-        let rot_13 = ("el=",el.charCodeAt(el)); 
+        let rot_13 = (el.charCodeAt(el)); 
         let y=el;
         let plus_13 = rot_13 >= 65 && rot_13 <= 77 || rot_13 >= 97 && rot_13 <= 109;
         let nega_13 =rot_13 >= 78 && rot_13 <= 90  || rot_13 >= 110 && rot_13 <= 122;
