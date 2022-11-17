@@ -34,6 +34,13 @@ function rot13(message){
   );
 };
 
+#Solution#2
+function rot13(message) {
+  let a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  let b = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
+  return message.replace(/[a-z]/gi, c => b[a.indexOf(c)])
+}
+
 rot13("abcdefghigjklmnopqrstuvwxyz"); // nopqrstuvtwxyzabcdefghijklm
 rot13("grfg");// test
 rot13("Test");//Grfg
